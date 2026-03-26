@@ -8,7 +8,10 @@
       "Bash(rm -f /Users/a1000361/.claude/gsd-file-manifest.json)",
       "Bash(find /Users/a1000361/.claude -name *gsd* -type f)",
       "Bash(find /Users/a1000361/.claude -name *gsd* -type d)",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(k\\) for k in d.keys\\(\\)]\")"
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(k\\) for k in d.keys\\(\\)]\")",
+      "Bash(git checkout:*)",
+      "Bash(git merge:*)",
+      "Bash(git push:*)"
     ]
   },
   "outputStyle": "Learning"
