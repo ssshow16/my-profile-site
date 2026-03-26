@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카운터 앱</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gray-100 flex items-center justify-center">
+  <div class="bg-white rounded-2xl shadow-lg p-10 flex flex-col items-center gap-8 w-80">
+    <h1 class="text-2xl font-bold text-gray-700">카운터</h1>
+
+    <div id="count-display" class="text-7xl font-mono font-bold text-blue-600">
+      0
+    </div>
+
+    <div class="flex gap-3 w-full">
+      <button
+        onclick="decrement()"
+        class="flex-1 py-3 rounded-xl bg-blue-100 text-blue-700 text-xl font-bold hover:bg-blue-200 active:scale-95 transition-all"
+      >
+        −1
+      </button>
+      <button
+        onclick="increment()"
+        class="flex-1 py-3 rounded-xl bg-blue-600 text-white text-xl font-bold hover:bg-blue-700 active:scale-95 transition-all"
+      >
+        +1
+      </button>
+    </div>
+
+    <button
+      onclick="reset()"
+      class="w-full py-3 rounded-xl bg-gray-200 text-gray-600 font-semibold hover:bg-gray-300 active:scale-95 transition-all"
+    >
+      리셋
+    </button>
+  </div>
+
+  <script>
+    let count = 0;
+
+    function render() {
+      document.getElementById('count-display').textContent = count;
+      // TODO(human): 범위(0~10) 경계에서 버튼 비활성화 로직을 여기에 추가하세요
+    }
+
+    function increment() {
+      count++;
+      render();
+    }
+
+    function decrement() {
+      count--;
+      render();
+    }
+
+    function reset() {
+      count = 0;
+      render();
+    }
+  </script>
+</body>
+</html>

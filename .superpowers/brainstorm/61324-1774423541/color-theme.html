@@ -1,0 +1,55 @@
+<h2>어떤 색상 테마가 마음에 드세요?</h2>
+<p class="subtitle">프로필 사이트의 전반적인 분위기를 결정합니다</p>
+
+<div class="cards">
+  <div class="card" data-choice="dark" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%); height: 120px; display: flex; align-items: center; justify-content: center;">
+      <div style="text-align: center;">
+        <div style="color: #38bdf8; font-size: 1.5rem; font-weight: bold;">홍길동</div>
+        <div style="color: #94a3b8; font-size: 0.85rem; margin-top: 4px;">프론트엔드 개발자</div>
+        <div style="display: flex; gap: 6px; margin-top: 8px; justify-content: center;">
+          <span style="background: #38bdf8; color: #0f172a; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem;">React</span>
+          <span style="background: #38bdf8; color: #0f172a; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem;">TypeScript</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>다크 모던</h3>
+      <p>짙은 네이비 배경에 하늘색 포인트. 개발자 감성의 세련된 느낌.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="light" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%); height: 120px; display: flex; align-items: center; justify-content: center;">
+      <div style="text-align: center;">
+        <div style="color: #6366f1; font-size: 1.5rem; font-weight: bold;">홍길동</div>
+        <div style="color: #64748b; font-size: 0.85rem; margin-top: 4px;">프론트엔드 개발자</div>
+        <div style="display: flex; gap: 6px; margin-top: 8px; justify-content: center;">
+          <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem;">React</span>
+          <span style="background: #6366f1; color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem;">TypeScript</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>라이트 클린</h3>
+      <p>밝은 흰색/회색 배경에 인디고 포인트. 깔끔하고 전문적인 느낌.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="gradient" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); height: 120px; display: flex; align-items: center; justify-content: center;">
+      <div style="text-align: center;">
+        <div style="color: #fff; font-size: 1.5rem; font-weight: bold; text-shadow: 0 1px 3px rgba(0,0,0,0.3);">홍길동</div>
+        <div style="color: rgba(255,255,255,0.85); font-size: 0.85rem; margin-top: 4px;">프론트엔드 개발자</div>
+        <div style="display: flex; gap: 6px; margin-top: 8px; justify-content: center;">
+          <span style="background: rgba(255,255,255,0.25); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem;">React</span>
+          <span style="background: rgba(255,255,255,0.25); color: white; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem;">TypeScript</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>그라디언트 비비드</h3>
+      <p>보라/핑크 그라디언트 포인트. 개성 있고 눈에 띄는 느낌.</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<section id="hero" class="relative min-h-screen flex flex-col items-center justify-center px-6 py-24 overflow-hidden">
+
+  <!-- Decorative blobs -->
+  <div class="hero-blob" style="width:320px;height:320px;top:-60px;right:-80px;"></div>
+  <div class="hero-blob" style="width:200px;height:200px;bottom:80px;left:-50px;"></div>
+  <div class="hero-blob" style="width:120px;height:120px;top:40%;left:10%;"></div>
+
+  <!-- Avatar -->
+  <div class="avatar-ring w-28 h-28 mb-6 shadow-2xl" style="box-shadow:0 0 40px rgba(56,189,248,0.25);">
+    <div class="avatar-inner">🤖</div>
+  </div>
+
+  <!-- Name -->
+  <h1 class="text-4xl md:text-5xl font-extrabold mb-3 tracking-tight text-center">
+    안녕하세요,
+    <span class="bg-gradient-to-r from-sky-400 to-indigo-500 bg-clip-text text-transparent">부루스 신</span>입니다
+  </h1>
+
+  <!-- Typing role -->
+  <p class="text-xl md:text-2xl mb-4 font-mono h-8 flex items-center gap-1">
+    <span id="typing-text" class="text-sky-400"></span><span id="typing-cursor"></span>
+  </p>
+
+  <!-- Bio -->
+  <p class="max-w-xl text-center text-slate-400 leading-relaxed mb-8 text-base md:text-lg">
+    AI 기술로 실용적인 솔루션을 만드는 개발자입니다.<br>
+    LLM을 활용한 애플리케이션 개발과 AI 통합에 열정을 가지고 있습니다.
+    <!-- ✏️  자기소개를 여기에 수정하세요 -->
+  </p>
+
+  <!-- CTA buttons -->
+  <div class="flex flex-wrap gap-4 justify-center">
+    <a href="#projects" class="btn-primary text-sm md:text-base">🚀 프로젝트 보기</a>
+    <a href="#contact"  class="btn-outline text-sm md:text-base">📬 연락하기</a>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-slate-600 text-xs animate-bounce">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+    <span>scroll</span>
+  </div>
+
+</section>

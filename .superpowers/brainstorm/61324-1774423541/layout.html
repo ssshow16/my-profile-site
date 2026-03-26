@@ -1,0 +1,93 @@
+<h2>어떤 레이아웃 구조가 좋으세요?</h2>
+<p class="subtitle">섹션들이 어떻게 배치될지 결정합니다</p>
+
+<div class="cards">
+  <div class="card" data-choice="single-scroll" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #0f172a; height: 160px; padding: 12px; box-sizing: border-box;">
+      <!-- Single page scroll mockup -->
+      <div style="background: #1e293b; border-radius: 4px; padding: 4px 8px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: center;">
+        <span style="color: #38bdf8; font-size: 0.65rem; font-weight: bold;">홍길동</span>
+        <div style="display: flex; gap: 8px;">
+          <span style="color: #94a3b8; font-size: 0.55rem;">About</span>
+          <span style="color: #94a3b8; font-size: 0.55rem;">Skills</span>
+          <span style="color: #94a3b8; font-size: 0.55rem;">Projects</span>
+          <span style="color: #94a3b8; font-size: 0.55rem;">Contact</span>
+        </div>
+      </div>
+      <div style="background: linear-gradient(180deg, #1e293b, #0f172a); border-radius: 4px; height: 30px; margin-bottom: 3px; display: flex; align-items: center; justify-content: center;">
+        <span style="color: #38bdf8; font-size: 0.6rem;">Hero 섹션</span>
+      </div>
+      <div style="background: #1e293b; border-radius: 4px; height: 18px; margin-bottom: 3px; display: flex; align-items: center; justify-content: center;">
+        <span style="color: #94a3b8; font-size: 0.55rem;">About Me</span>
+      </div>
+      <div style="background: #1e293b; border-radius: 4px; height: 18px; margin-bottom: 3px; display: flex; align-items: center; justify-content: center;">
+        <span style="color: #94a3b8; font-size: 0.55rem;">Skills</span>
+      </div>
+      <div style="background: #1e293b; border-radius: 4px; height: 18px; display: flex; align-items: center; justify-content: center;">
+        <span style="color: #94a3b8; font-size: 0.55rem;">Projects & Contact</span>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>원페이지 스크롤</h3>
+      <p>상단 네비게이션 + 세로로 이어지는 섹션들. 가장 일반적인 포트폴리오 형태.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="hero-centered" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #0f172a; height: 160px; padding: 12px; box-sizing: border-box;">
+      <!-- Hero centered mockup -->
+      <div style="background: linear-gradient(135deg, #0f172a, #1e3a5f); border-radius: 4px; height: 70px; margin-bottom: 4px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px;">
+        <div style="width: 20px; height: 20px; border-radius: 50%; background: #38bdf8;"></div>
+        <span style="color: #fff; font-size: 0.65rem; font-weight: bold;">홍길동</span>
+        <span style="color: #94a3b8; font-size: 0.5rem;">프론트엔드 개발자</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3px; margin-bottom: 3px;">
+        <div style="background: #1e293b; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #94a3b8; font-size: 0.5rem;">About</span>
+        </div>
+        <div style="background: #1e293b; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #94a3b8; font-size: 0.5rem;">Skills</span>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3px;">
+        <div style="background: #1e293b; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #94a3b8; font-size: 0.5rem;">Projects</span>
+        </div>
+        <div style="background: #1e293b; border-radius: 4px; height: 28px; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #94a3b8; font-size: 0.5rem;">Contact</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>히어로 + 카드 그리드</h3>
+      <p>중앙 정렬 히어로 섹션 + 카드 형태 섹션 그리드. 임팩트 있고 현대적.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="sidebar" onclick="toggleSelect(this)">
+    <div class="card-image" style="background: #0f172a; height: 160px; padding: 12px; box-sizing: border-box; display: flex; gap: 6px;">
+      <!-- Sidebar mockup -->
+      <div style="background: #1e293b; border-radius: 4px; width: 50px; padding: 6px; display: flex; flex-direction: column; align-items: center; gap: 4px;">
+        <div style="width: 24px; height: 24px; border-radius: 50%; background: #38bdf8; margin-bottom: 4px;"></div>
+        <span style="color: #fff; font-size: 0.5rem; text-align: center; line-height: 1.2;">홍길동</span>
+        <div style="width: 100%; height: 1px; background: #334155; margin: 2px 0;"></div>
+        <span style="color: #94a3b8; font-size: 0.45rem;">About</span>
+        <span style="color: #94a3b8; font-size: 0.45rem;">Skills</span>
+        <span style="color: #94a3b8; font-size: 0.45rem;">Projects</span>
+        <span style="color: #94a3b8; font-size: 0.45rem;">Contact</span>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 3px;">
+        <div style="background: #1e293b; border-radius: 4px; flex: 2; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #94a3b8; font-size: 0.5rem;">메인 콘텐츠</span>
+        </div>
+        <div style="background: #1e293b; border-radius: 4px; flex: 1; display: flex; align-items: center; justify-content: center;">
+          <span style="color: #94a3b8; font-size: 0.5rem;">프로젝트</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>사이드바 레이아웃</h3>
+      <p>왼쪽 고정 사이드바에 프로필 + 오른쪽 콘텐츠 영역. 독특하고 차별화된 느낌.</p>
+    </div>
+  </div>
+</div>

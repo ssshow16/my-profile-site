@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bash scripts/start-server.sh --project-dir /Users/a1000361/study/claude/inflearn/my-profile-site)",
+      "Bash(bash scripts/stop-server.sh /Users/a1000361/study/claude/inflearn/my-profile-site/.superpowers/brainstorm/61324-1774423541)",
+      "Skill(update-config)",
+      "Bash(rm -rf /Users/a1000361/.claude/get-shit-done)",
+      "Bash(rm -f /Users/a1000361/.claude/gsd-file-manifest.json)",
+      "Bash(find /Users/a1000361/.claude -name *gsd* -type f)",
+      "Bash(find /Users/a1000361/.claude -name *gsd* -type d)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\(k\\) for k in d.keys\\(\\)]\")"
+    ]
+  },
+  "outputStyle": "Learning"
+}
